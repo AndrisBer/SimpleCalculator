@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="487.0" style="-fx-border-radius: 7;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.calculator.SimpleCalculator">
+   <children>
+      <Button layoutX="28.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="1" textFill="#1ba46b">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="101.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="2" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="170.0" layoutY="154.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="3" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="28.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="4" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="101.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="5" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="(">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="170.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="9" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="170.0" layoutY="214.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="6" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="28.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="7" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="101.0" layoutY="274.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="8" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="28.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="0" textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="276.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#getResult" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: green; -fx-text-fill: white;" text="=" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="401.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="√">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="276.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="-">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="276.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="/" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="401.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="\%">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="338.0" layoutY="211.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="*" textAlignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="403.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#ClearInputs" prefHeight="52.0" prefWidth="54.0" style="-fx-background-color: red; -fx-text-fill: yellow;" text="Clear" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="276.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="+">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="401.0" layoutY="151.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text=")">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <TextField fx:id="inp" editable="false" layoutX="19.0" layoutY="48.0" prefHeight="77.0" prefWidth="227.0" promptText="0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="out" editable="false" layoutX="253.0" layoutY="48.0" prefHeight="77.0" prefWidth="227.0" promptText="0" wrapText="true">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextArea>
+      <Label layoutX="93.0" layoutY="14.0" text="Expression" />
+      <Label layoutX="338.0" layoutY="14.0" text="Result" />
+      <Button layoutX="338.0" layoutY="271.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="^">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <Button layoutX="340.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#convert" prefHeight="52.0" prefWidth="54.0" text="C/F">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Button>
+      <Button layoutX="170.0" layoutY="329.0" mnemonicParsing="false" onMouseClicked="#handleButtonClick" prefHeight="52.0" prefWidth="54.0" text="." textAlignment="CENTER" textFill="#1ba46b">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
