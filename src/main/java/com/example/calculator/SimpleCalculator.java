@@ -115,7 +115,7 @@ public class SimpleCalculator {
         try {
             float a = Float.parseFloat(inp.getText());
             float resF = ((a * (float) 9 / 5) + 32);
-            float resC = ((a-32)*((float) 9 /5));
+            float resC = ((a-32)*((float) 5 /9));
             out.setText("F° >> " + String.format("%.2f", resF)+"\nC° >> "+String.format("%.2f", resC));
         } catch (NumberFormatException e) {
             out.setText("Invalid Input");
